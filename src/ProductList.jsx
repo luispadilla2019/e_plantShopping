@@ -345,6 +345,7 @@ function ProductList() {
                                         <p>{item2.description}</p>
                                         {addedToCart[0]}
                                         <button className={ cartItems.items.filter(prod => prod.name == item2.name).length == 0  ? "product-button" : "product-button added-to-cart"} onClick={() => handleAddToCart(item2)}>{  cartItems.items.filter(prod => prod.name == item2.name).length == 0  ? "Add to Cart" : "Added to Cart"} </button>
+                                    
                                     </div>
                                 
                                 ))}
