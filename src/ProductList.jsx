@@ -342,8 +342,7 @@ function ProductList() {
                                         <p className='product-title'>{item2.name}</p>
                                         <img className='product-image' src={item2.image}  alt={item2.name}/>
                                             <p className='product-price'>{item2.cost}</p>
-                                        <p>{item2.description}</p>
-                                        {addedToCart[0]}
+                                        <p>{item2.description}</p>                                       
                                         <button className={ cartItems.items.filter(prod => prod.name == item2.name).length == 0  ? "product-button" : "product-button added-to-cart"} onClick={() => handleAddToCart(item2)}>{  cartItems.items.filter(prod => prod.name == item2.name).length == 0  ? "Add to Cart" : "Added to Cart"} </button>
                                     
                                     </div>
