@@ -344,7 +344,7 @@ function ProductList() {
                                             <p className='product-price'>{item2.cost}</p>
                                         <p>{item2.description}</p>
                                         {addedToCart[0]}
-                                        <button className={ cartItems.items.filter(prod => prod.name == item2.name).length == 0  ? "product-button" : "product-button added-to-cart"} onClick={() => handleAddToCart(item2)}>{addedToCart[item2.name] != true ? "Add to Cart" : "Added to Cart"} </button>
+                                        <button className={ cartItems.items.filter(prod => prod.name == item2.name).length == 0  ? "product-button" : "product-button added-to-cart"} onClick={() => handleAddToCart(item2)}>{  cartItems.items.filter(prod => prod.name == item2.name).length == 0  ? "Add to Cart" : "Added to Cart"} </button>
                                     </div>
                                 
                                 ))}
